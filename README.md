@@ -5,14 +5,16 @@ A simple feedforward neural net using stochastic gradient descent, implemented i
 
 To try this out, all you have to do is instantiate the FeedForwardSGD class and train it on some appropriate data:
 
-'''python
+```python
 ff = FeedForwardSGD([784, 30, 10], ["ReLU", "Sigmoid"])
 ff.train(xTrain, yTrain)
 score = ff.score(xTest, yTest)
-'''
+```
 
 You can also run a single data instance by calling the forward pass function:
 
-'''python
+```python
 output = ff.forwardPass(xInstance)
-'''
+```
+
+The file mnist.py includes an example that you can run immediately. It will train a three layer net on the classical MNIST dataset for handwritten digits recognition.
