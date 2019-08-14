@@ -5,7 +5,7 @@ A simple feedforward neural net using stochastic gradient descent, implemented i
 
 To try this out, all you have to do is instantiate the FeedForwardSGD class and train it on some appropriate data:
 
-'''
+'''python
 ff = FeedForwardSGD([784, 30, 10], ["ReLU", "Sigmoid"])
 ff.train(xTrain, yTrain)
 score = ff.score(xTest, yTest)
@@ -13,6 +13,6 @@ score = ff.score(xTest, yTest)
 
 You can also run a single data instance by calling the forward pass function:
 
-'''
+'''python
 output = ff.forwardPass(xInstance)
 '''
