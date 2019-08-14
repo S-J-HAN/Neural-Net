@@ -11,7 +11,7 @@ ff.train(xTrain, yTrain)
 score = ff.score(xTest, yTest)
 ```
 
-You can also run a single data instance by calling the forward pass function:
+You can also run a single data instance through the net by calling the forward pass function:
 
 ```python
 output = ff.forwardPass(xInstance)
