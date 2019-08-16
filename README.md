@@ -6,7 +6,7 @@ A simple feedforward neural net using stochastic gradient descent, implemented i
 To try this out, all you have to do is instantiate the FeedForwardSGD class and train it on some appropriate data:
 
 ```python
-# Two layer neural net with ReLU and sigmoid activation functions, 784x1 size input, 30x1 size hidden layer and 10x1 size output
+# Three layer neural net with ReLU and sigmoid activation functions, 784x1 size input, 30x1 size hidden layer and 10x1 size output
 ff = FeedForwardSGD([784, 30, 10], ["ReLU", "Sigmoid"])
 ff.train(xTrain, yTrain)
 score = ff.score(xTest, yTest)
